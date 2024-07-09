@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #007991;
+    color: #F9F5FF;
+}
+
+.container {
+    margin: 12%;
+    width: 90%;
+    max-width: 700px;
+}
+
+.display {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background: #fff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 20px;
+    border-radius: 5px;
+}
+
+.container h1 {
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.container h1 span {
+    color: black;
+    border-bottom: 4px solid black;
+    padding-bottom: 7px;
+}
+
+.display img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.display input {
+    border: 0;
+    outline: 0;
+    font-size: 24px;
+    width: 100%;
+}
+
+.container button img {
+    width: 28px;
+    margin-right: 10px;
+}
+
+.container button {
+    border: 0;
+    outline: 0;
+    background: green;
+    color: white;
+    font-size: 22px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 26px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .container {
+        margin: 10%;
+        width: 95%;
+    }
+
+    .container h1 {
+        font-size: 38px;
+    }
+
+    .display input {
+        font-size: 20px;
+    }
+
+    .container button {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 8%;
+        width: 100%;
+    }
+
+    .container h1 {
+        font-size: 32px;
+    }
+
+    .display {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .display img {
+        margin-top: 10px;
+        width: 25px;
+    }
+
+    .display input {
+        font-size: 18px;
+    }
+
+    .container button {
+        font-size: 18px;
+        padding: 14px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 5%;
+        width: 100%;
+    }
+
+    .container h1 {
+        font-size: 28px;
+    }
+
+    .display {
+        padding: 15px;
+    }
+
+    .display img {
+        margin-top: 10px;
+        width: 20px;
+    }
+
+    .display input {
+        font-size: 16px;
+    }
+
+    .container button {
+        font-size: 16px;
+        padding: 12px 18px;
+    }
+}
